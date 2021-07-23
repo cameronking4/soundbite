@@ -1,0 +1,36 @@
+PODS:
+  - AACameraView (1.1)
+  - EZAudio (1.1.5):
+    - EZAudio/Full (= 1.1.5)
+  - EZAudio/Core (1.1.5)
+  - EZAudio/Full (1.1.5):
+    - EZAudio/Core
+    - TPCircularBuffer (= 1.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - KYShutterButton (2.0.1)
+  - TPCircularBuffer (1.1)
+
+DEPENDENCIES:
+  - AACameraView (~> 1.1)
+  - EZAudio
+  - IQKeyboardManagerSwift
+  - KYShutterButton
+
+SPEC REPOS:
+  trunk:
+    - AACameraView
+    - EZAudio
+    - IQKeyboardManagerSwift
+    - KYShutterButton
+    - TPCircularBuffer
+
+SPEC CHECKSUMS:
+  AACameraView: 379c180bd48a1814f6713bdb6a894b1eaec18f0e
+  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KYShutterButton: 794612eedc2ee75114326f7394703f0f49bf0882
+  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
+
+PODFILE CHECKSUM: a5b16008bc526f31eca196355b7fa007e6696bc4
+
+COCOAPODS: 1.10.1
