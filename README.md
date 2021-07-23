@@ -7,8 +7,8 @@ Essentially the iMessage extension for Dubsmash.
 
 1.    Click on the “Create Audio” button. This will open your camera roll videos folder.
 2.     Select the video from which you would like to strip the audio
-![1](https://user-images.githubusercontent.com/35708477/126738363-cdcd61cc-c772-4634-80ec-39e7d09c16b0.png)
 3.    Edit the audio – select the pencil icon, drag the bars to the endpoints of desired sound clip, and press the scissors icon to crop.
+![1](https://user-images.githubusercontent.com/35708477/126738363-cdcd61cc-c772-4634-80ec-39e7d09c16b0.png)
 4.    Launch the Soundbite iMessage extension within a conversation in the “Messages” app bar above the kepad; it can be found in the bar of applications beneath the text message box. This will launch a library database of all your saved sounds.
 ![2](https://user-images.githubusercontent.com/35708477/126738361-9b769dad-b6cf-4e76-b77e-0d1821c563d0.png)
 5.    Select a saved sound you would like to use by hitting the checkmark icon next to the audio file.
