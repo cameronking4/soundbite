@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE36611A520A3EF54A9FAC64 /* Pods_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6B6D645FC7919852B95260 /* Pods_MessagesExtension.framework */; };
+		F81107302696A4EA002630D5 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F811072F2696A4EA002630D5 /* SharedAssets.xcassets */; };
+		F81107312696A4EA002630D5 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F811072F2696A4EA002630D5 /* SharedAssets.xcassets */; };
+		F811075C2696E711002630D5 /* SBVideoRecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F811075B2696E711002630D5 /* SBVideoRecordingVC.swift */; };
+		F846D3A7269F2C4E00AFB2FD /* SBVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846D3A6269F2C4E00AFB2FD /* SBVideoPlayerView.swift */; };
+		F882C05D2695785B004C53AC /* SBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C05C2695785B004C53AC /* SBExtensions.swift */; };
+		F882C06326957A3F004C53AC /* SBLocalNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C06226957A3F004C53AC /* SBLocalNotificationName.swift */; };
+		F88FB094268E987900890829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88FB093268E987900890829 /* AppDelegate.swift */; };
+		F88FB096268E987900890829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88FB095268E987900890829 /* SceneDelegate.swift */; };
+		F88FB09B268E987900890829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88FB099268E987900890829 /* Main.storyboard */; };
+		F88FB09D268E987C00890829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88FB09C268E987C00890829 /* Assets.xcassets */; };
+		F88FB0A0268E987C00890829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88FB09E268E987C00890829 /* LaunchScreen.storyboard */; };
+		F88FB0B0268E98DA00890829 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88FB0AF268E98DA00890829 /* Messages.framework */; };
+		F88FB0B3268E98DA00890829 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88FB0B2268E98DA00890829 /* MessagesViewController.swift */; };
+		F88FB0B6268E98DA00890829 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88FB0B4268E98DA00890829 /* MainInterface.storyboard */; };
+		F88FB0B8268E98DC00890829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88FB0B7268E98DC00890829 /* Assets.xcassets */; };
+		F88FB0BC268E98DC00890829 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F88FB0AD268E98DA00890829 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F88FB0C4268E9BCD00890829 /* SBHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88FB0C3268E9BCD00890829 /* SBHomeVC.swift */; };
+		F8B92FFA26950AFE003EBA71 /* SBAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B92FF926950AFE003EBA71 /* SBAudioManager.swift */; };
+		F8B93004269566FC003EBA71 /* SBAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B93003269566FC003EBA71 /* SBAudioCell.swift */; };
+		F8B9300826956901003EBA71 /* SBAudioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9300726956901003EBA71 /* SBAudioInfo.swift */; };
+		F8C44155269684EC006A1FAF /* SBAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B93003269566FC003EBA71 /* SBAudioCell.swift */; };
+		F8C4415E26969C1C006A1FAF /* SBAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B92FF926950AFE003EBA71 /* SBAudioManager.swift */; };
+		F8C4416326969C22006A1FAF /* SBAudioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9300726956901003EBA71 /* SBAudioInfo.swift */; };
+		F8C4416626969C38006A1FAF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA1CE4269643290023C889 /* AppConstants.swift */; };
+		F8C4416A26969C8F006A1FAF /* SBMessagesMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4416926969C8F006A1FAF /* SBMessagesMainVC.swift */; };
+		F8C4418B26969FAD006A1FAF /* SBLocalNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C06226957A3F004C53AC /* SBLocalNotificationName.swift */; };
+		F8DA1CE5269643290023C889 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA1CE4269643290023C889 /* AppConstants.swift */; };
+		F8E6FC232694F91D00B623D1 /* SBAudioEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E6FC222694F91D00B623D1 /* SBAudioEditVC.swift */; };
+		F8F75B11269E682D0016B300 /* SBInstructionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F75B10269E682D0016B300 /* SBInstructionVC.swift */; };
+		FF270C57F1821758ED17AA99 /* Pods_SoundBite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359A1E50CDB05D1556B323E3 /* Pods_SoundBite.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F88FB0BA268E98DC00890829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88FB088268E987900890829 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F88FB0AC268E98DA00890829;
+			remoteInfo = Messages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F88FB0BD268E98DD00890829 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F88FB0BC268E98DC00890829 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		359A1E50CDB05D1556B323E3 /* Pods_SoundBite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundBite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6B6D645FC7919852B95260 /* Pods_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50871B3919D8C78C2073C60D /* Pods-SoundBite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundBite.release.xcconfig"; path = "Target Support Files/Pods-SoundBite/Pods-SoundBite.release.xcconfig"; sourceTree = "<group>"; };
+		6E70EBC62B8D393C45ECBAAB /* Pods-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.release.xcconfig"; path = "Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		70CDD85B76A2CD340FA5AA41 /* Pods-Messages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messages.release.xcconfig"; path = "Target Support Files/Pods-Messages/Pods-Messages.release.xcconfig"; sourceTree = "<group>"; };
+		D8560318DDE47EADE17D7A5B /* Pods-SoundBite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundBite.debug.xcconfig"; path = "Target Support Files/Pods-SoundBite/Pods-SoundBite.debug.xcconfig"; sourceTree = "<group>"; };
+		DD0E302349D85F9CAEA8984B /* Pods-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.debug.xcconfig"; path = "Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		F811072F2696A4EA002630D5 /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
+		F811075B2696E711002630D5 /* SBVideoRecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBVideoRecordingVC.swift; sourceTree = "<group>"; };
+		F842584A2693F1BF00498500 /* Messages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Messages.entitlements; sourceTree = "<group>"; };
+		F842584B2693F1C700498500 /* SoundBite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundBite.entitlements; sourceTree = "<group>"; };
+		F846D3A6269F2C4E00AFB2FD /* SBVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBVideoPlayerView.swift; sourceTree = "<group>"; };
+		F882C05C2695785B004C53AC /* SBExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBExtensions.swift; sourceTree = "<group>"; };
+		F882C06226957A3F004C53AC /* SBLocalNotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBLocalNotificationName.swift; sourceTree = "<group>"; };
+		F88FB090268E987900890829 /* SoundBite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88FB093268E987900890829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F88FB095268E987900890829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F88FB09A268E987900890829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F88FB09C268E987C00890829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F88FB09F268E987C00890829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F88FB0A1268E987C00890829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88FB0AD268E98DA00890829 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88FB0AF268E98DA00890829 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		F88FB0B2268E98DA00890829 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		F88FB0B5268E98DA00890829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F88FB0B7268E98DC00890829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F88FB0B9268E98DC00890829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88FB0C3268E9BCD00890829 /* SBHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBHomeVC.swift; sourceTree = "<group>"; };
+		F8B92FF926950AFE003EBA71 /* SBAudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBAudioManager.swift; sourceTree = "<group>"; };
+		F8B93003269566FC003EBA71 /* SBAudioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBAudioCell.swift; sourceTree = "<group>"; };
+		F8B9300726956901003EBA71 /* SBAudioInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBAudioInfo.swift; sourceTree = "<group>"; };
+		F8C4416926969C8F006A1FAF /* SBMessagesMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBMessagesMainVC.swift; sourceTree = "<group>"; };
+		F8DA1CE4269643290023C889 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F8E6FC222694F91D00B623D1 /* SBAudioEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBAudioEditVC.swift; sourceTree = "<group>"; };
+		F8F75B10269E682D0016B300 /* SBInstructionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBInstructionVC.swift; sourceTree = "<group>"; };
+		FE7F1F61A662611FA2261F56 /* Pods-Messages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messages.debug.xcconfig"; path = "Target Support Files/Pods-Messages/Pods-Messages.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F88FB08D268E987900890829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF270C57F1821758ED17AA99 /* Pods_SoundBite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88FB0AA268E98DA00890829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88FB0B0268E98DA00890829 /* Messages.framework in Frameworks */,
+				CE36611A520A3EF54A9FAC64 /* Pods_MessagesExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EC795EB360274A3364C6049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE7F1F61A662611FA2261F56 /* Pods-Messages.debug.xcconfig */,
+				70CDD85B76A2CD340FA5AA41 /* Pods-Messages.release.xcconfig */,
+				D8560318DDE47EADE17D7A5B /* Pods-SoundBite.debug.xcconfig */,
+				50871B3919D8C78C2073C60D /* Pods-SoundBite.release.xcconfig */,
+				DD0E302349D85F9CAEA8984B /* Pods-MessagesExtension.debug.xcconfig */,
+				6E70EBC62B8D393C45ECBAAB /* Pods-MessagesExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F882C06826957AB2004C53AC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F882C05C2695785B004C53AC /* SBExtensions.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F882C06926957AB8004C53AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8F75B0F269E68160016B300 /* Instruction */,
+				F882C06A26957AD5004C53AC /* Home */,
+				F882C06B26957AE2004C53AC /* AudioEdit */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F882C06A26957AD5004C53AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F88FB0C3268E9BCD00890829 /* SBHomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F882C06B26957AE2004C53AC /* AudioEdit */ = {
+			isa = PBXGroup;
+			children = (
+				F8E6FC222694F91D00B623D1 /* SBAudioEditVC.swift */,
+			);
+			path = AudioEdit;
+			sourceTree = "<group>";
+		};
+		F88FB087268E987900890829 = {
+			isa = PBXGroup;
+			children = (
+				F8C4415226968335006A1FAF /* Shared */,
+				F88FB092268E987900890829 /* SoundBite */,
+				F88FB0B1268E98DA00890829 /* MessagesExtension */,
+				F88FB0AE268E98DA00890829 /* Frameworks */,
+				F88FB091268E987900890829 /* Products */,
+				6EC795EB360274A3364C6049 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F88FB091268E987900890829 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F88FB090268E987900890829 /* SoundBite.app */,
+				F88FB0AD268E98DA00890829 /* MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F88FB092268E987900890829 /* SoundBite */ = {
+			isa = PBXGroup;
+			children = (
+				F842584B2693F1C700498500 /* SoundBite.entitlements */,
+				F88FB093268E987900890829 /* AppDelegate.swift */,
+				F88FB095268E987900890829 /* SceneDelegate.swift */,
+				F882C06826957AB2004C53AC /* Global */,
+				F882C06926957AB8004C53AC /* ViewControllers */,
+				F88FB099268E987900890829 /* Main.storyboard */,
+				F88FB09E268E987C00890829 /* LaunchScreen.storyboard */,
+				F88FB09C268E987C00890829 /* Assets.xcassets */,
+				F88FB0A1268E987C00890829 /* Info.plist */,
+			);
+			path = SoundBite;
+			sourceTree = "<group>";
+		};
+		F88FB0AE268E98DA00890829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F88FB0AF268E98DA00890829 /* Messages.framework */,
+				359A1E50CDB05D1556B323E3 /* Pods_SoundBite.framework */,
+				4B6B6D645FC7919852B95260 /* Pods_MessagesExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F88FB0B1268E98DA00890829 /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F842584A2693F1BF00498500 /* Messages.entitlements */,
+				F88FB0B2268E98DA00890829 /* MessagesViewController.swift */,
+				F8C4416926969C8F006A1FAF /* SBMessagesMainVC.swift */,
+				F811075B2696E711002630D5 /* SBVideoRecordingVC.swift */,
+				F846D3A6269F2C4E00AFB2FD /* SBVideoPlayerView.swift */,
+				F88FB0B4268E98DA00890829 /* MainInterface.storyboard */,
+				F88FB0B7268E98DC00890829 /* Assets.xcassets */,
+				F88FB0B9268E98DC00890829 /* Info.plist */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		F8C4415226968335006A1FAF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F8B92FF926950AFE003EBA71 /* SBAudioManager.swift */,
+				F882C06226957A3F004C53AC /* SBLocalNotificationName.swift */,
+				F8B93003269566FC003EBA71 /* SBAudioCell.swift */,
+				F8B9300726956901003EBA71 /* SBAudioInfo.swift */,
+				F8DA1CE4269643290023C889 /* AppConstants.swift */,
+				F811072F2696A4EA002630D5 /* SharedAssets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F8F75B0F269E68160016B300 /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				F8F75B10269E682D0016B300 /* SBInstructionVC.swift */,
+			);
+			path = Instruction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F88FB08F268E987900890829 /* SoundBite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88FB0A4268E987C00890829 /* Build configuration list for PBXNativeTarget "SoundBite" */;
+			buildPhases = (
+				E0616710640A993941437B3C /* [CP] Check Pods Manifest.lock */,
+				F88FB08C268E987900890829 /* Sources */,
+				F88FB08D268E987900890829 /* Frameworks */,
+				F88FB08E268E987900890829 /* Resources */,
+				F88FB0BD268E98DD00890829 /* Embed App Extensions */,
+				9F92EA9ABAE64FA740990EFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F88FB0BB268E98DC00890829 /* PBXTargetDependency */,
+			);
+			name = SoundBite;
+			productName = SoundBite;
+			productReference = F88FB090268E987900890829 /* SoundBite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F88FB0AC268E98DA00890829 /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88FB0C0268E98DD00890829 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				1E5DB25EB75B293DB414242F /* [CP] Check Pods Manifest.lock */,
+				F88FB0A9268E98DA00890829 /* Sources */,
+				F88FB0AA268E98DA00890829 /* Frameworks */,
+				F88FB0AB268E98DA00890829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = Messages;
+			productReference = F88FB0AD268E98DA00890829 /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F88FB088268E987900890829 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SB;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = SoundBite;
+				TargetAttributes = {
+					F88FB08F268E987900890829 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					F88FB0AC268E98DA00890829 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = F88FB08B268E987900890829 /* Build configuration list for PBXProject "SoundBite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F88FB087268E987900890829;
+			productRefGroup = F88FB091268E987900890829 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F88FB08F268E987900890829 /* SoundBite */,
+				F88FB0AC268E98DA00890829 /* MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F88FB08E268E987900890829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88FB0A0268E987C00890829 /* LaunchScreen.storyboard in Resources */,
+				F88FB09D268E987C00890829 /* Assets.xcassets in Resources */,
+				F88FB09B268E987900890829 /* Main.storyboard in Resources */,
+				F81107302696A4EA002630D5 /* SharedAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88FB0AB268E98DA00890829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88FB0B8268E98DC00890829 /* Assets.xcassets in Resources */,
+				F88FB0B6268E98DA00890829 /* MainInterface.storyboard in Resources */,
+				F81107312696A4EA002630D5 /* SharedAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E5DB25EB75B293DB414242F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessagesExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F92EA9ABAE64FA740990EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoundBite/Pods-SoundBite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoundBite/Pods-SoundBite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoundBite/Pods-SoundBite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0616710640A993941437B3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundBite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F88FB08C268E987900890829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E6FC232694F91D00B623D1 /* SBAudioEditVC.swift in Sources */,
+				F8B92FFA26950AFE003EBA71 /* SBAudioManager.swift in Sources */,
+				F88FB0C4268E9BCD00890829 /* SBHomeVC.swift in Sources */,
+				F8B93004269566FC003EBA71 /* SBAudioCell.swift in Sources */,
+				F88FB094268E987900890829 /* AppDelegate.swift in Sources */,
+				F88FB096268E987900890829 /* SceneDelegate.swift in Sources */,
+				F8B9300826956901003EBA71 /* SBAudioInfo.swift in Sources */,
+				F882C05D2695785B004C53AC /* SBExtensions.swift in Sources */,
+				F882C06326957A3F004C53AC /* SBLocalNotificationName.swift in Sources */,
+				F8DA1CE5269643290023C889 /* AppConstants.swift in Sources */,
+				F8F75B11269E682D0016B300 /* SBInstructionVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88FB0A9268E98DA00890829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88FB0B3268E98DA00890829 /* MessagesViewController.swift in Sources */,
+				F8C44155269684EC006A1FAF /* SBAudioCell.swift in Sources */,
+				F811075C2696E711002630D5 /* SBVideoRecordingVC.swift in Sources */,
+				F8C4415E26969C1C006A1FAF /* SBAudioManager.swift in Sources */,
+				F8C4418B26969FAD006A1FAF /* SBLocalNotificationName.swift in Sources */,
+				F8C4416326969C22006A1FAF /* SBAudioInfo.swift in Sources */,
+				F8C4416A26969C8F006A1FAF /* SBMessagesMainVC.swift in Sources */,
+				F8C4416626969C38006A1FAF /* AppConstants.swift in Sources */,
+				F846D3A7269F2C4E00AFB2FD /* SBVideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F88FB0BB268E98DC00890829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F88FB0AC268E98DA00890829 /* MessagesExtension */;
+			targetProxy = F88FB0BA268E98DC00890829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F88FB099268E987900890829 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F88FB09A268E987900890829 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F88FB09E268E987C00890829 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F88FB09F268E987C00890829 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F88FB0B4268E98DA00890829 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F88FB0B5268E98DA00890829 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F88FB0A2268E987C00890829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F88FB0A3268E987C00890829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F88FB0A5268E987C00890829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8560318DDE47EADE17D7A5B /* Pods-SoundBite.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SoundBite/SoundBite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 6CF48YVT7Y;
+				INFOPLIST_FILE = SoundBite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_CFLAGS = TARGET_MAIN_APP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kynginc.soundbite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F88FB0A6268E987C00890829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50871B3919D8C78C2073C60D /* Pods-SoundBite.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SoundBite/SoundBite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 6CF48YVT7Y;
+				INFOPLIST_FILE = SoundBite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_CFLAGS = TARGET_MAIN_APP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kynginc.soundbite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F88FB0BE268E98DD00890829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD0E302349D85F9CAEA8984B /* Pods-MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/Messages.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 6CF48YVT7Y;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_CFLAGS = TARGET_MESSAGES_EXTENSION;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kynginc.soundbite.messages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F88FB0BF268E98DD00890829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E70EBC62B8D393C45ECBAAB /* Pods-MessagesExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/Messages.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 6CF48YVT7Y;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_CFLAGS = TARGET_MESSAGES_EXTENSION;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kynginc.soundbite.messages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F88FB08B268E987900890829 /* Build configuration list for PBXProject "SoundBite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88FB0A2268E987C00890829 /* Debug */,
+				F88FB0A3268E987C00890829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88FB0A4268E987C00890829 /* Build configuration list for PBXNativeTarget "SoundBite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88FB0A5268E987C00890829 /* Debug */,
+				F88FB0A6268E987C00890829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88FB0C0268E98DD00890829 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88FB0BE268E98DD00890829 /* Debug */,
+				F88FB0BF268E98DD00890829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F88FB088268E987900890829 /* Project object */;
+}

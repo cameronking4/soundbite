@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SBVideoRecordingVC.mergeVideoAndAudio(_:):SBVideoRecordingVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "videoAssetTrack.minFrameDuration">
+            </PersistentString>
+            <PersistentString
+               value = "audioAssetTrack.minFrameDuration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SBHomeVC.extractAudioFromVideo(_:):SBHomeVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "audioAssetTrack.timeRange">
+            </PersistentString>
+            <PersistentString
+               value = "audioAssetTrack.duration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
